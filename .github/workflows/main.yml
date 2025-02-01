@@ -34,7 +34,7 @@ jobs:
 
     # Upload CSV files (optional, if you need to save them as artifacts)
     - name: Upload CSV files
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: gold-silver-analysis
         path: |
