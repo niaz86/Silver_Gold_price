@@ -1,5 +1,4 @@
 name: Run Python Script Daily at 9 AM
- 
 
 # This will trigger the action daily at 9 AM UTC
 on: 
@@ -42,7 +41,6 @@ jobs:
           Analysis\ of\ Gold\ marketing.csv
           Analysis\ of\ Silver\ marketing.csv
           
-    
     - name: Commit and push changes
       run: |
         git config --global user.name 'github-actions[bot]'
@@ -63,7 +61,6 @@ jobs:
         name: gold-silver-analysis
         path: ./gold-silver-analysis.csv  # Replace with your actual path
       
-
       env:
         # GitHub token to authenticate the push operation
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
